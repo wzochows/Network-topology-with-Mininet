@@ -1,0 +1,127 @@
+{
+"paths": [
+{
+    "deviceId": "of:0000000000000001",
+    "IPv4": "10.0.0.1",
+    "hostname": "Belgrad",
+    "nodeDelay": 0.1,
+    "neighbours": ["Praga", "Saloniki", "Warna"],
+    "links":    [
+        {"switches": "Praga", "IP": "10.0.0.7", "delay": 3.49, "bw": 20, "output": 2},
+        {"switches": "Saloniki", "IP": "10.0.0.8", "delay": 3.71, "bw": 10, "output": 4},
+        {"switches": "Warna", "IP": "10.0.0.10", "delay": 4.41, "bw": 10, "output": 3 }
+    ]
+},
+{
+    "deviceId": "of:0000000000000002",
+    "IPv4": "10.0.0.2",
+    "hostname": "Bergen",
+    "nodeDelay": 0.1, 
+    "neighbours": ["Hamburg", "Liverpool", "Praga", "Warna"],
+    "links":    [
+        {"switches": "Hamburg", "IP": "10.0.0.4", "delay": 5.77, "bw": 10, "output": 2},
+        {"switches": "Liverpool", "IP": "10.0.0.5", "delay": 6.63, "bw": 10, "output": 3},
+        {"switches":  "Praga", "IP": "10.0.0.7", "delay": 9.08, "bw": 20, "output": 5},
+        {"switches": "Warna", "IP": "10.0.0.10", "delay": 17.24, "bw": 10, "output": 4}
+    ]
+},
+{
+    "deviceId": "of:0000000000000003",
+    "hostname": "Bolonia",
+    "IPv4": "10.0.0.3",
+    "nodeDelay": 0.1,
+    "neighbours": ["Madryt", "Praga", "Saloniki", "Vaduz"],
+    "links":    [
+        {"switches": "Madryt", "IP": "10.0.0.6", "delay": 9.16, "bw": 10, "output": 3},
+        {"switches": "Praga", "IP": "10.0.0.7", "delay": 4.67, "bw": 20, "output": 2},
+        {"switches": "Saloniki", "IP": "10.0.0.8", "delay": 7.33, "bw": 10, "output": 5},
+        {"switches": "Vaduz", "IP": "10.0.0.9", "delay": 2.3, "bw": 10, "output": 4}
+    ]
+},
+{
+    "deviceId": "of:0000000000000004",
+    "hostname": "Hamburg",
+    "IPv4": "10.0.0.4",
+    "nodeDelay": 0.1,
+    "neighbours": ["Bergen", "Liverpool", "Praga"],
+    "links":    [
+        {"switches": "Bergen", "IP": "10.0.0.2", "delay": 5.77, "bw": 10, "output": 3},
+        {"switches": "Liverpool", "IP": "10.0.0.5", "delay": 6.06, "bw": 10, "output": 4},
+        {"switches": "Praga", "IP": "10.0.0.7", "delay": 3.49, "bw": 20, "output": 2}
+    ]
+},
+{
+    "deviceId": "of:0000000000000005",
+    "hostname": "Liverpool",
+    "IPv4": "10.0.0.5",
+    "nodeDelay": 0.1,
+    "neighbours": ["Bergen", "Hamburg", "Madryt"],
+    "links":    [
+        {"switches": "Bergen", "IP": "10.0.0.2", "delay": 6.63, "bw": 10, "output": 4},
+        {"switches": "Hamburg", "IP": "10.0.0.4", "delay": 6.06, "bw": 10, "output": 2},
+        {"switches": "Madryt", "IP": "10.0.0.6", "delay": 9.9, "bw": 10, "output": 3}
+    ]
+},
+{
+    "deviceId": "of:0000000000000006",
+    "hostname": "Madryt",
+    "IPv4": "10.0.0.6",
+    "nodeDelay": 0.1,
+    "neighbours": ["Bolonia", "Liverpool"],
+    "links":    [
+        {"switches": "Bolonia", "IP": "10.0.0.3", "delay": 9.16, "bw": 10, "output": 2},
+        {"switches": "Liverpool", "IP": "10.0.0.5", "delay": 9.9, "bw": 10, "output": 3}
+    ]
+},
+{
+    "deviceId": "of:0000000000000007",
+    "hostname": "Praga",
+    "IPv4": "10.0.0.7",
+    "nodeDelay": 0.1,
+    "neighbours": ["Belgrad", "Bergen", "Bolonia", "Hamburg"],
+    "links":    [
+        {"switches": "Belgrad", "IP": "10.0.0.1", "delay": 5.22, "bw": 20, "output": 4},
+        {"switches": "Bergen", "IP": "10.0.0.2", "delay": 9.08, "bw": 20, "output": 5},
+        {"switches": "Bolonia", "IP": "10.0.0.3", "delay": 4.67, "bw": 20, "output": 3},
+        {"switches": "Hamburg", "IP": "10.0.0.4", "delay": 3.49, "bw": 20, "output": 2}
+
+    ]
+},
+{
+    "deviceId": "of:0000000000000008",
+    "hostname": "Saloniki",
+    "IPv4": "10.0.0.8",
+    "nodeDelay": 0.1,
+    "neighbours": ["Belgrad", "Bolonia", "Warna"],
+    "links":    [
+        {"switches": "Belgrad", "IP": "10.0.0.1", "delay": 3.71, "bw": 10, "output": 2},
+        {"switches": "Bolonia", "IP": "10.0.0.3", "delay": 7.33, "bw": 10, "output": 4},
+        {"switches": "Warna", "IP": "10.0.0.10", "delay": 3.45, "bw": 10, "output": 3}
+    ]
+},
+{
+    "deviceId": "of:0000000000000009",
+    "hostname": "Vaduz",
+    "IPv4": "10.0.0.9",
+    "nodeDelay": 0.1,
+    "neighbours": ["Bolonia"],
+    "links":    [
+        {"switches": "Bolonia", "IP": "10.0.0.3", "delay": 2.3, "bw": 10, "output": 2}
+
+    ]
+},
+{
+    "deviceId": "of:000000000000000a",
+    "hostname": "Warna",
+    "IPv4": "10.0.0.10",
+    "nodeDelay": 0.1,
+    "neighbours": ["Belgrad", "Bergen", "Saloniki"],
+    "links":    [
+        {"switches": "Belgrad", "IP": "10.0.0.1", "delay": 4.41, "bw": 10, "output": 2},
+        {"switches": "Bergen", "IP": "10.0.0.2", "delay": 17.24, "bw": 10, "output": 3},
+        {"switches": "Saloniki", "IP": "10.0.0.8", "delay": 3.45, "bw": 10, "output": 4}
+    ]
+}
+
+]
+}
